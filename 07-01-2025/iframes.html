@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>I-Frames</title>
+        <style>
+            body{
+                font-family: 'Times New Roman', Times, serif;
+                text-align: center;
+                background-color: black;
+                color: brown;
+                padding: 20px;
+            }
+            h1{
+                font-size: 2.5rem;
+                margin-bottom: 20px;
+
+            }
+            .container1{
+                display: grid;
+                grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+                gap: 15px;
+                padding:20px;
+                max-width: 100px;
+            }
+            .iframe1{
+                width:100%;
+                height:250px;
+                border:5px, solid #fff;
+            }
+            iframe{
+                width:100%;
+                height: 100%;
+                border:none;
+            }
+
+
+            @media(max-width:760px){
+                .container1{
+                    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Interacting with an Iframe Page</h1>
+        <div class="container1">
+            <div class="iframe1">
+                <iframe src="hitman.jpg" title="Image" width="50%" height="50%" frameborder="0"></iframe>
+            </div>
+            <div class="iframe1">
+                <iframe src="hitman.jpg" title="Image"></iframe>
+            </div>
+            <div class="iframe1">
+                <iframe src="hitman.jpg" title="Image"></iframe>
+            </div>
+            <div class="iframe1">
+                <iframe src="hitman.jpg" title="Image"></iframe>
+            </div>
+            <h2> Google Map Iframe</h2>
+            <div class="iframe1">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3912.646793688294!2d76.9659847748647!3d11.287353488894167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8ef017bb9f629%3A0x8a221f517bd6f2c2!2sAG%20Gunny%20Mundy!5e0!3m2!1sen!2sin!4v1736203954335!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Aathil Store" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <h2>YouTube</h2>
+            <div class="iframe1">
+                <iframe src="https://www.youtube.com/embed/yDsxIP4tU70?si=_QtwVx6G5hwyulDT"  title="Nee singam dhan" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+        </div>
+    </body>
+</html>

@@ -1,0 +1,124 @@
+<html>
+    <head>
+        <title>Responsive Media page</title>
+        <style>
+            header{
+                text-align: center;
+                padding:50px 20px;
+                background:linear-gradient(130def,#e8e559);
+            }
+            body{
+                font-family: 'Times New Roman', Times, serif;
+                line-height: 1.5;n  
+                background:linear-gradient(120deg,#fcfc,#16213e);
+                
+            }
+            header{
+                text-align: center;
+                padding: 50px 22px;
+                background:linear-gradient(120deg,#16213e);
+            }
+            header h1{
+                font: size 3rem;
+                color:rgb(21, 26, 86);
+                margin-bottom: 35px;
+            }
+            header p{
+                font-size: 2rem;
+                margin-bottom: 30px;
+            }
+            header .mda{
+                background: #ae4040;
+                color: #000;
+                padding:12px 28px;
+                text-decoration: none;
+                font-size: 1.3rem;
+                border-radius: 35px;
+                transition:tranform 0.5s,box-shadow 0.5s;
+            }
+            header .mda:hover{
+                transform:translateY(-6px);
+                box-shadow:0 10px 20px rgba(200, 65, 88, 1);
+            }
+            .grid-view{
+                display:grid;
+                grid-template-columns:repeat(3,1fr);
+                gap:25px;
+                justify-content: center;
+                padding:50px 30px;
+                max-width:1150px;
+            }
+            .grid{
+                background:#f686e7;
+                border-radius: 10px;
+                padding: 18px;
+                text-align: center;
+                
+            }
+            .grid-view div:hover{
+                transform:translateY(-7px);
+                box-shadow:0 10px 20px rgba(200, 65, 88, 1);
+                
+            }
+            .grid h2{
+                font-size:1.7rem;
+                margin-bottom: 18px;
+                color:#e94566;
+            }
+            .grid p{
+                font-size: 1rem;
+                color:rgba(255,255,255,0.7);
+            }
+
+            footer{
+                text-align: center;
+                padding:20px;
+                background:#789dcb;
+            }
+            @media(max-width:1150px){
+                .grid-view{
+                    grid-template-columns: repeat(2,0.8fr);
+                }
+                header h1{
+                    font-size: 3rem;
+                }
+                header p{
+                    font-size:2rem
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Landing Page</h1>
+            <p>Here We Experience the Responsive Design</p>
+            <a href="https://www.youtube.com/embed/R6uoSjZ2imo?si=RvPqmjJU8q7KUn-q" class="mda">Let's Begin !</a>
+        </header>
+        <section class="grid-view">
+            <div class="grid">
+                <h2>Discover the First Page</h2>
+                <p>Hey Yo !!! This is the page of the masses. I was broken from a young age. Taking my socking to the masses. Write down my poems for the few that look at me , shook at me, feeling me.</p>
+            </div>
+            <div class="grid">
+                <h2>Discover the Second Page</h2>
+                <p>Singing from... Heart ache from the pain. Taking my message from the veins. Speaking my lessons from the brains. Seeing the beauty through the ....... !!!!!!!</p>
+            </div>
+            <div class="grid">
+                <h2>Discover the Third Page</h2>
+                <p>Pain !!! You made me a , You made me a Believer !!! Believer ..... !!! Pain !!! You break me down you build me up, believer !!!! Believer ... !!!! Pain !!! I let the Bullets fly oh let them rain .... My Luck , My Love , My God , They Came From .....(Pain !!!!!)</p>
+            </div>
+            <div class="grid">
+                <h2>Discover the Fourth Page</h2>
+                <p>Last Things Last !!! Buy the grace of the fires and the flames .... You're the face of the future the blood in my veins oh ooooh (2)!!!!</p>
+            </div>
+            <div class="grid">
+                <h2>Discover the Last Page</h2>
+                <p>I was Choking in the crowd. Livin My brain up in the cloud. Falling to ashes to the ground. Hoping my feelings they would Drown ....!</p>
+            </div>
+        </section>
+        <footer>
+            <p>&copy;Responsive Design. All Rights Reserved.</p>
+            <a href="">Terms and Conditions</a>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1e1e2f, #252550);
+            color: #fff;
+        }
+        .heading {
+            text-align: center;
+            padding: 20px 0;
+            background: #111;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+        }
+        .heading h1 {
+            margin: 0;
+            font-size: 3rem;
+            color: #e62429; /* Marvel red color */
+        }
+        .main {
+            display: flex;
+            justify-content: center;
+            margin: 30px auto;
+            padding: 20px;
+            max-width: 1200px;
+        }
+        .main div {
+            margin: 0 10px;
+            text-align: center;
+        }
+        .main h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #e62429;
+            display: inline-block;
+        }
+        .image {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            border: 2px solid #444;
+            border-radius: 10px;
+            transition: transform 0.5s, box-shadow 0.5s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+        }
+        .image:hover {
+            transform: scale(1.2);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.8);
+        }
+        footer {
+            text-align: center;
+            background: #111;
+            color: #aaa;
+            font-size: 0.9rem;
+            
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="heading">
+        <h1>The Marvel Universe</h1>
+    </div>
+
+
+    <div class="main">
+        <div class="first">
+            <h2>Popular Super Heroes</h2>
+            <div class="firstImage">
+                <img class="image" src="magneto.png" alt="">
+                <img class="image" src="cyclops.png" alt="">
+                <img class="image" src="phoenix.png" alt="">
+                <img class="image" src="wolverine.jpg" alt="">
+                <img class="image" src="beast.png" alt="">
+                <img class="image" src="storm.png" alt="">
+                <img class="image" src="gambit.png" alt="">
+                <img class="image" src="rogue.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="second">
+            <h2>Popular Villains</h2>
+            <div class="secondImage">
+                <img class="image" src="doctordoom.png" alt="">
+                <img class="image" src="octopus.png" alt="">
+                <img class="image" src="redskull.png" alt="">
+                <img class="image" src="galactus.png" alt="">
+                <img class="image" src="purpleman.png" alt="">
+                <img class="image" src="greengoblin.png" alt="">
+                <img class="image" src="loki.png" alt="">
+                <img class="image" src="kingpin.png" alt="">
+                
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        &copy; 2025 Marvel Universe. All Rights Reserved.
+    </footer>
+</body>
+</html>

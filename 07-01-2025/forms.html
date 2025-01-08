@@ -1,0 +1,113 @@
+<html>
+    <head>
+        <title>Form Design</title>
+        <style>
+            body{
+
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                background:linear-gradient(120,#62e21e);
+                margin:0;
+                padding: 20px;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                height: 60vh;
+            }
+            .form{
+                background:#62e21e;
+                backdrop-filter: blur(1px);
+                padding:20px;
+                border-radius:15px;
+                width:100%;
+                max-width:400px;
+                box-shadow: 0 8px 20px rgba(67, 86, 67, 0.93);
+            }
+            .form h1{
+                margin-bottom: 20px;
+                text-align: center;
+                font-size: 2.3rem;
+                color: #360a34;
+                text-shadow: 20px;
+            }
+            .form label{
+                display: block;
+                margin-bottom: 8px;
+                font-size: 1.6rem;
+                text-shadow: 20px;
+            }
+            .form input[type="text"],
+            .form input[type="email"],
+            .form input[type="password"],
+            .form imput[type="tel"]
+,            .form button{
+                width:100%;
+                padding: 5px 12px;
+                margin-bottom: 18px;
+                border-radius: 8px;
+                border:none;
+                outline:none;
+                font-size: 1rem;
+                transition: all 0.5s ease;
+            }
+            .form input[type="text"],
+            .form input[type="email"],
+            .form input[type="password"],
+            .form imput[type="tel"]
+            {
+                background:rgba(252, 233, 222, 0.93);
+                box-shadow: 0 0 8px #360a34;
+            }
+            .form input[type="text"],
+            .form input[type="email"],
+            .form input[type="password"],
+            .form imput[type="tel"]{
+                background: #dfcece;
+                box-shadow: 0 0 8px #cfe4eb;
+            }
+            
+            .form button{
+                background:#e3d1d1;
+                color: aliceblue;
+                font-weight: 200;
+                box-shadow: #dfcece;
+            }
+
+            .form button:hover{
+                background: #62e21e;
+                color: aqua;
+                transform:translateY(-3px);
+            }
+
+            .form p{
+                text-align: center;
+                font-size: 1rem;
+                color:#4b3f3f
+  
+            }
+            
+
+        </style>
+    </head>
+    <body>
+        <div class="form">
+            <h1>Sign Up Page</h1>
+            <form>
+            <label for="name">Name : </label>
+            <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+            <br>
+            <label for="email">Email : </label>
+            <input type="email" id="email" name="emai" placeholder="Enter Your Email" required>
+            <br>
+            <label for="password">Password : </label>
+            <input type="password" id="password" name="password"  placeholder="Enter Your Password" required>
+            <br>
+            <label for="phone">Phone No : </label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter Your Phone Number" required>
+            <br>
+            <br>
+            <button type="submit" >Submit</button>
+        </form>
+        <p>Already have an account ? <a href="">Login Here</a></p>
+        </div>
+    </body>
+</html>
