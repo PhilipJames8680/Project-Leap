@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <title>Listing the data using CSS</title>
+        <style>
+            body{
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                background-color: aquamarine;
+                color: rgb(89, 13, 88);
+                margin: 22px;
+            }
+            h1{
+                text-align: center;
+                color: rgb(137, 61, 219);
+                box-shadow: 0 10px 20px rgba(137, 61, 219,0.9);
+            }
+            .list-item{
+                max-width:780px;
+                margin:auto;
+                background-color: rgb(150, 103, 194);
+                border-radius: 15px;
+                padding: 25px;
+            }
+            ul.dynamiclist{
+                list-style-type:disc;
+                padding:20px;
+            }
+            ul.dynamiclist li{
+                padding:18px,20px;
+                margin:10px 1px;
+                background: linear-gradient(135,#ffecd2,#fcb69f);
+                box-shadow: 0 10px 20px rgba(78, 71, 199, 0.9);
+                border-radius: 10px;
+                position:relative;
+                transition:transform 0.5s,box-shadow 0.4s ease;
+            }
+            ul.dynamiclist li::before{
+                color: rgb(218, 218, 32);
+                position:absolute;
+                left:10px;
+                font-size: medium;
+                
+            }
+            ul.dynamiclist:hover{
+                transition:transform 0.5s,box-shadow 0.4s ease;
+                box-shadow: 0 10px 20px rgba(78, 71, 199, 0.9);
+            }
+            ol.ordered{
+                list-style-type:disc;
+                padding:20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CSS Lists</h1>
+
+        <div class="list-item">
+
+            <h2>Provision List</h2>
+            <ul class="dynamicList"> 
+                <li>Stationary Items</li>
+                <li>Candy</li>
+                <li>Spices
+                    <ul>
+                        <li>Pepper</li>
+                        <li>Cardomon</li>
+                    </ul>
+                </li>
+                <li>Soft Drinks
+                </li>
+            </ul>
+            <h2>Ordered List</h2>
+                <ol class="Ordered">
+                    <li>Paper</li>
+                    <li>Wrist-Watch
+                        <ol>
+                            <li>Airpods</li>
+                            <li>Bombs</li>
+                        </ol>
+                    </li>
+                    <li>Scales</li>
+                </ol>
+            
+        </div>    
+        </body>
+</html>
