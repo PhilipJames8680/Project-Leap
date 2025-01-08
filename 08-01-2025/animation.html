@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Animation Page</title>
+        <style>
+            body{
+                text-align: center;
+                font-family: 'Times New Roman', Times, serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin:auto;
+                background: linear-gradient(120deg, rgb(70,230,180),rgb(240,80,240));
+                color:aliceblue
+            }
+            .glow{
+                background: linear-gradient(120deg, rgb(30, 66, 200),rgb(85, 216, 42));
+                border-radius: 10px;
+                border:navy;
+                padding:20px;
+                font-weight: bold;
+                cursor:pointer;
+                transition:transform 0.5s ease, box-shadow 0.7s ease;
+            }
+            .glow:hover{
+                transform:translateY(-10px);
+                box-shadow:0 10px 22px rgba(81,25,134);
+            }
+            .glow:active{
+                transform:translateY(-20px);
+                box-shadow: 0 10px 20px rgba(80,50,230);
+            }
+        </style>
+        </head>
+        <body>
+            <button class="glow">Click Here</button>
+        </body>
+</html>

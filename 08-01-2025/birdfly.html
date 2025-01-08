@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bird Animation</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: linear-gradient(to bottom, #a8c0ff, #3f2b96);
+            overflow: hidden;
+            position: relative;
+        }
+        .bird {
+            position: absolute;
+            width: 80px;
+            height: 90px;
+            transform: translate(-50%, -50%);
+            transition: transform 0.1s ease;
+        }
+        .bird-body {
+            position: absolute;
+            background-color: yellow;
+            width: 80px;
+            height: 90px;
+            border-radius: 50%;
+            top: 0;
+            left: 0;
+        }
+        .wing {
+            position: absolute;
+            background-color: white;
+            width: 50px;
+            height: 60px;
+            border-radius: 50%;
+            top: 15px;
+            transform-origin: top center;
+            animation: flap 0.5s ease-in-out infinite;
+        }
+        .wing.left-wing {
+            left: -20px; /* Position the left wing on the left side */
+        }
+        .wing.right-wing {
+            right: -20px; /* Position the right wing on the right side */
+        }
+        @keyframes flap {
+            0%, 100% {
+                transform: rotate(0deg);
+            }
+            50% {
+                transform: rotate(30deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bird">
+        <div class="bird-body"></div>
+        <div class="wing left-wing"></div>
+        <div class="wing right-wing"></div>
+    </div>
+
+    <script>
+        const bird = document.querySelector('.bird');
+
+        // Update bird's position based on mouse movement
+        document.addEventListener('mousemove', (event) => {
+            const { clientX, clientY } = event; // Get mouse coordinates
+            bird.style.transform = `translate(${clientX}px, ${clientY}px)`;
+        });
+    </script>
+</body>
+</html>

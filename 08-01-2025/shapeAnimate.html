@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <style>
+            body{
+                font-family: 'Times New Roman', Times, serif;
+                display:flex;
+                margin:0%;
+                padding:2px;
+                align-items: center;
+                justify-content: center;
+                height:100vh;
+                background:linear-gradient(120deg,#20db71,#33957e);
+                color:azure;
+                font-size: larger;
+            }
+            .animative{
+                overflow: hidden;
+                width:50%;
+                border:2px solid #20db71;
+                border-radius: 15px;
+                padding:20px;
+                white-space: nowrap;
+                display:flex;
+                font-size: 25px;
+                font-weight: bold;
+                animation:scroll-left 12s linear infinite;
+            }
+            @keyframes scroll-left{
+                from{
+                    transform: translateX(100%);
+                }
+                to{
+                    transform: translateX(-100%);
+                }
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div class="animative">
+            <div class="effect">Here is the scrolling text Animation</div>
+        </div>
+    </body>
+</html>
