@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hyperlink</title>
+        <style>
+            body{
+                justify-content: center;
+                font-family: 'Times New Roman', Times, serif;
+                margin: 0;
+                padding: 0;
+                background-color: bisque;
+            }
+            header{
+                background-color: gray;
+                padding:8px 15px;
+                text-align: center;
+            }
+            nav{
+                background-color: aquamarine;
+                display: flex;
+                justify-content: center;
+            }
+
+            nav a{
+                color:darkblue;
+                text-decoration:none;
+                padding:10px 20px;
+                margin: 0 12px;
+                border-radius: 6px;
+                transition:background-color 0.9s;
+            }
+            nav a:hover{
+                background-color: #007bff;
+            }
+            h1,h2{
+                color:black;
+            }
+            section{
+                padding:20px;
+                margin:20px auto;
+                max-width: 750px;
+                background-color: #fe8607;
+                box-shadow: 0 0 10px;
+            }
+            .button{
+                display: inline-block;
+                padding: 10px 20px;
+                margin: 10px;
+                color:cyan;
+                text-decoration: none;
+                border-radius: 5px;
+                font-weight:bold;
+            }
+            .button:hover{
+                background-color: grey;
+            }
+            footer{
+                text-align: center;
+                padding: 5px;
+                background-color:burlywood;
+            }
+            </style>
+        </head>
+        <body>
+            <header>
+                <h1>Hyperlink Page Demonstration</h1>
+            </header>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#Contact">Contact</a>
+                <a href="">Features</a>
+                <a href="#thread">Threads</a>
+            </nav>
+            <section id="about">
+                <h2>About Us</h2>
+                <p>We are a part of a Company that love to run Hacking Services.Click Here to Explore
+                <a href="hyperlink.html/about" class="button">click</a>
+                </p>
+            </section>
+            <section id="thread">
+                <h2>Thread Page</h2>
+                <ul>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UC77zVLSva6lRY6eqaDFUkuA">YouTube</a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/school/srieshwar/">Linkedin</a>
+                    </li>
+                    <li>
+                        <a href="tel:+9363661687">Contact Me</a>
+                    </li>
+                </ul>
+            </section>
+            <section id="Contact">
+                <h2>Contact Me</h2>
+                <p>Have any queries or Want to Contact me ? Send Mail As:</p>
+                <a href="https://sece.ac.in/contact/">Click Here</a>
+            </section>
+            <footer>
+                <p>&copy;Philip James. All Rights Reserved.</p>
+            </footer>
+        </body>
+</html>
