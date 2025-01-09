@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <style>
+            #tag1{
+                font-family: 'Times New Roman', Times, serif;
+                background-color: azure;
+                font-size:larger;
+            }
+            .marquee{
+                overflow:hidden;
+                white-space:nowrap;
+                box-sizing: border-box;
+                animation:marquee 10s  linear infinite;
+            }
+            @keyframes marquee{
+                from{
+                    transform:translateX(100%);
+                }
+                to{
+                    transform:translateX(-100%);
+                }
+            }
+
+            #tag2:hover{
+                color:aquamarine;
+            }
+            
+           
+
+
+
+        </style>
+    </head>
+    <body>
+        <div class="marquee">
+            <marque><center><h1>Simple Design Using JS</h1></center></marque>
+            <h1>Marquee using JS</h1>
+        </div>
+        <p id="tag1">I'm Waking Up</p>
+        <p id="tag2">I'm Waking Up</p>
+        <script>
+            document.getElementById("tag1").style.color="red";
+            document.getElementById("tag1").style.fontFamily='Lucida Sans';
+            document.getElementById("tag2").style.color="green";
+            document.getElementById("tag2").style.fontSize="10px";
+
+        </script>
+    </body>
+</html>
