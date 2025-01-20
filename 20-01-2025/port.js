@@ -17,17 +17,17 @@ const commands = {
 
 
 
-// Function to handle commands
+
 function handleCommand(command) {
   if (command === 'su') {
-    // Provide base64 string to decode
+    
     return `To switch user, decode this base64 string: L2JvbW1ha3V0dHkucG5n`;
   }
   
-  // Check if the user enters the decoded command (which is '/bommakutti.png')
+  
   if (command === '/bommakutty.png') {
     const decodedLink = "http://192.168.1.4:8080/bommakutty.png";
-    // Introduce a short delay before redirection to ensure all code execution completes
+    
     setTimeout(() => {
       window.location.href = decodedLink;
     }, 100);
@@ -35,7 +35,7 @@ function handleCommand(command) {
   }
   
 
-  // Check for known commands in the `commands` object
+  
   if (commands[command]) {
     return commands[command];
   }
@@ -46,7 +46,7 @@ function handleCommand(command) {
 
 
 
-// Listen for Enter key
+
 commandInput.addEventListener("keydown", (event) => {
   if (event.key === "Enter") {
     const command = commandInput.value.trim();
