@@ -1,0 +1,62 @@
+/* Reset Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    background-color: #0d0d0d;
+    color: #33ff33;
+  }
+  
+  /* Terminal Container */
+  .terminal {
+    width: 80%;
+    max-width: 800px;
+    margin: 50px auto;
+    border: 1px solid #333;
+    border-radius: 8px;
+    background-color: #1a1a1a;
+    box-shadow: 0 0 15px #000;
+  }
+  
+  /* Header */
+  .header {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #444;
+  }
+  
+  .title {
+    color: #33ff33;
+    font-weight: bold;
+  }
+  
+  /* Output Area */
+  .output {
+    padding: 10px;
+    height: 300px;
+    overflow-y: auto;
+    white-space: pre-wrap;
+  }
+  
+  /* Input Area */
+  .input {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid #444;
+  }
+  
+  .prompt {
+    color: #d26a9c;
+  }
+  
+  #commandInput {
+    flex: 1;
+    background: none;
+    border: none;
+    outline: none;
+    color: #33ff33;
+    font-size: 16px;
+  }
+  
