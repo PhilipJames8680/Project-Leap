@@ -1,4 +1,4 @@
-/* Reset Styles */
+
 body {
     margin: 0;
     padding: 0;
@@ -7,7 +7,7 @@ body {
     color: #33ff33;
   }
   
-  /* Terminal Container */
+
   .terminal {
     width: 80%;
     max-width: 800px;
@@ -18,7 +18,6 @@ body {
     box-shadow: 0 0 15px #000;
   }
   
-  /* Header */
   .header {
     background-color: #333;
     padding: 10px;
@@ -31,7 +30,7 @@ body {
     font-weight: bold;
   }
   
-  /* Output Area */
+
   .output {
     padding: 10px;
     height: 300px;
@@ -39,7 +38,7 @@ body {
     white-space: pre-wrap;
   }
   
-  /* Input Area */
+
   .input {
     display: flex;
     align-items: center;
